@@ -1,0 +1,110 @@
+@com: #93a1a1;
+@lit: #195f91;
+@clo: #93a1a1;
+@pun: @clo;
+@opn: @clo;
+@fun: #dc322f;
+@str: #D14;
+@atv: @str;
+@tag: #1e347b;
+@kwd: @tag;
+@var: teal;
+@dec: @var;
+@atn: @var;
+@typ: @var;
+@pln: #48484c;
+
+@background_hight: #f7f7f9;
+@background_low: darken(@background_hight, 3%);
+
+pre.prettyprint {
+    font-size: 13px;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    white-space: pre-wrap; /* css3.0 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+code.prettyprint, pre.prettyprint {
+    padding: 8px;
+
+    background-color: @background_hight;
+    border: 1px solid #e1e1e8;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+
+    display: block;
+
+    .linenums {
+        -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+        -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+        box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    }
+/* Specify class=linenums on a pre to get line numbering */
+    ol.linenums {
+        padding: 0 0 0 40px;
+        margin: 0; /* IE indents via margin-left */
+        li {
+            padding-left: 12px;
+            color: #bebec5;
+            line-height: 20px;
+            text-shadow: 0 1px 0 #fff;
+            &.L1, &.L3, &.L5, &.L7, &.L9 {
+                background-color: @background_low;
+            }
+        }
+    }
+
+    .com {
+        color: @com;
+        font-style: italic;
+    }
+    .lit {
+        color: @lit;
+    }
+    .pun {
+        color: @pun;
+    }
+    .opn {
+        color: @opn;
+    }
+    .clo {
+        color: @clo;
+    }
+    .fun {
+        color: @fun;
+    }
+    .str {
+        color: @str;
+    }
+    .atv {
+        color: @atv;
+    }
+    .kwd {
+        color: @kwd;
+    }
+    .tag {
+        color: @tag;
+    }
+    .typ{
+        color: @typ;
+    }
+    .atn {
+        color: @atn;
+    }
+    .dec {
+        color: @dec;
+    }
+    .var {
+        color: @var;
+    }
+    .pln {
+        color: @pln;
+    }
+}
